@@ -1,0 +1,16 @@
+/* Photo layer: grows and blurs on hover. */
+.photo {
+  transition:
+    scale var(--motion-card-hover-duration) var(--ease-soft),
+    filter var(--motion-card-hover-duration) var(--ease-soft);
+}
+@media (hover: hover) {
+  .card:hover .photo {
+    scale: var(--motion-video-hover-scale);
+    filter: blur(var(--blur-video));
+  }
+}
+/* Dark fade over the photo (transparent -> black at 80%; the element is at 50%). */
+.shade {
+  background: var(--gradient-post-shade);
+}

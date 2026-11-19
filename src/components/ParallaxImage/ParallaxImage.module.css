@@ -1,0 +1,5 @@
+/* The photo is 5% taller than its frame. */
+.photo {
+  height: calc(100% * var(--motion-parallax-scale));
+  will-change: translate;
+}

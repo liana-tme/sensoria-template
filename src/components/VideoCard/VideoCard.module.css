@@ -1,0 +1,41 @@
+/* Picture layer (poster + video): grows and blurs on hover, only while not playing. */
+.media {
+  transition:
+    scale var(--motion-play-duration) var(--ease-play),
+    filter var(--motion-play-duration) var(--ease-play);
+}
+@media (hover: hover) {
+  .card:not(.playing):hover .media {
+    scale: var(--motion-video-hover-scale);
+    filter: blur(var(--blur-video));
+  }
+}
+/* Fine grain over the picture (design asset, not a photo) */
+.grain {
+  background-image: url("/images/texture/grain.png");
+  background-repeat: repeat;
+  opacity: var(--motion-grain-video-opacity);
+}
+.play {
+  transition: opacity var(--motion-play-duration) var(--ease-play);
+}
+.hidden {
+  opacity: 0;
+}
+/* Ring around the button: grows and fades, endless. */
+.pulse {
+  inset: calc(var(--spacing-play-pulse) * -1);
+  opacity: var(--motion-pulse-opacity);
+  animation: pulse var(--motion-pulse-duration) linear infinite;
+}
+@keyframes pulse {
+  to {
+    scale: var(--motion-pulse-scale);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+}

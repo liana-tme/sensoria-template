@@ -1,0 +1,15 @@
+/* Grain over the accent panel (design asset, not a photo) */
+.grain {
+  background-image: url("/images/texture/grain.png");
+  background-repeat: repeat;
+  opacity: var(--motion-grain-concept-opacity);
+}
+/* Title block grows and fades in with the parent's --entry (0 -> 1). */
+.grow {
+  scale: var(--entry);
+  opacity: var(--entry);
+}
+/* Photo grid leans back and straightens with the parent's --entry. */
+.tilt {
+  transform: perspective(var(--concept-perspective)) rotateX(calc(var(--motion-concept-tilt) * (1 - var(--entry))));
+}

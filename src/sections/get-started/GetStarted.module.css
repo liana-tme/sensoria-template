@@ -1,0 +1,13 @@
+/* Grain over the dark block (design asset): 0.03 / 0.02 / none */
+.grain {
+  background-image: url("/images/texture/grain.png");
+  background-repeat: repeat;
+  opacity: var(--motion-grain-cta-opacity);
+}
+/* The intro rises 20px, the form 10px (appear) */
+.near {
+  --motion-rise-distance: var(--motion-rise-distance-sm);
+}
+.nearest {
+  --motion-rise-distance: var(--motion-words-distance);
+}

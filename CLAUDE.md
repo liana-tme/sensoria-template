@@ -1,0 +1,3 @@
+# Sensoria template
+
+@AGENTS.md

@@ -1,0 +1,22 @@
+/* The answer grows from zero height (0.4s spring); the plus turns half a circle. */
+.answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--motion-accordion-duration) var(--ease-spring-accordion);
+}
+.open .answer {
+  grid-template-rows: 1fr;
+}
+.plus {
+  transition: rotate var(--motion-accordion-duration) var(--ease-spring-accordion);
+}
+.open .plus {
+  rotate: var(--motion-accordion-turn);
+}
+/* Delays of the fade-in (appear) */
+.first {
+  --reveal-delay: var(--motion-fade-delay-1);
+}
+.second {
+  --reveal-delay: var(--motion-fade-delay-2);
+}

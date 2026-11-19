@@ -1,0 +1,787 @@
+/*
+ * Sensoria design tokens — the single source of every design value.
+ * Property of Luna UI.
+ *
+ * Sections and components read values ONLY from here, through Tailwind classes
+ * (bg-page, text-text-secondary, px-section-x, rounded-card, type-h2, ...).
+ * Tailwind's default palette, spacing scale, radii and shadows are switched off,
+ * so a value outside this file simply has no class.
+ *
+ * Source: the Sensoria design (color styles, text styles, reference sections).
+ * Breakpoints (mobile first): phone < 810, tablet md >= 810, desktop lg >= 1200.
+ * Section-specific values are added below as sections are built,
+ * each with a comment "desktop / tablet / phone".
+ */
+
+/* "static": always output every variable, even if no class uses it yet */
+@theme static {
+  /* ---------- Breakpoints & grid ---------- */
+  --breakpoint-*: initial;
+  --breakpoint-md: 810px;   /* tablet layout */
+  --breakpoint-lg: 1200px;  /* desktop layout */
+  --container-*: initial;
+  --container-content: 1320px; /* max content width inside a section */
+  --container-section: 1320px; /* max width of a whole section incl. its side padding (Analysis): content 1240 */
+
+  /* ---------- Colors (named by role; design style name in brackets) ---------- */
+  --color-*: initial;
+
+  /* backgrounds & surfaces */
+  --color-page: #111111;            /* page and section background (Background) */
+  --color-black: #0a0a0a;           /* deepest surface (Black) */
+  --color-white: #ffffff;           /* light sections, buttons, solid fills (White) */
+
+  /* text */
+  --color-text-primary: #ffffff;    /* headings and body on dark (White) */
+  --color-text-secondary: rgba(255, 255, 255, 0.8); /* softened text on dark (White 80%) */
+  --color-text-placeholder: #9c9c9c; /* form placeholders, quiet text (Placeholder) */
+  --color-shade: #000000;           /* photo shading on team cards (pure black) */
+  --color-text-dark: #0a0a0a;       /* text on white surfaces (Black) */
+
+  /* accent */
+  --color-accent: #f5699c;          /* one highlight per section: serif italic, tags (Accent) */
+
+  /* glass over photos (before/after handle) */
+  --color-glass: rgba(255, 255, 255, 0.4);       /* handle fill and divider line */
+  --color-glass-edge: rgba(255, 255, 255, 0.24); /* handle outline */
+  --color-glass-faint: rgba(255, 255, 255, 0.04); /* billing switch track */
+
+  /* forms */
+  --color-button-edge: #e5e5e5;     /* outline of the form button */
+  --color-button-pressed: #f5f5f5;  /* form button while pressed */
+  --color-error-fill: rgba(255, 33, 66, 0.23); /* form button after a failed send */
+  --color-veil: rgba(10, 10, 10, 0.85); /* dark veil over the footer photo (Black at 85%) */
+  --color-veil-soft: rgba(10, 10, 10, 0.3); /* light veil over the Vision photo (Black at 30%) */
+
+  /* lines */
+  --color-border: #222222;          /* card and field outlines (Border) */
+  --color-divider: #404040;         /* thin rules between rows (Divider) */
+
+  /* ---------- Fonts ---------- */
+  --font-*: initial;
+  --font-sans: var(--font-inter-display), system-ui, sans-serif;     /* everything */
+  --font-serif: var(--font-instrument-serif), Georgia, serif;         /* serif accents (L / M / S) */
+
+  /* ---------- Spacing ---------- */
+  --spacing-*: initial;
+  --spacing-0: 0px;
+  --spacing-hairline: 1px;
+  /* layout (phone values; tablet & desktop below in :root) */
+  --spacing-section-x: 20px;     /* section padding, sides: 40 / 32 / 20 */
+  --spacing-section-y: 80px;     /* section padding, top & bottom: 120 / 100 / 80 */
+  --spacing-section-gap: 48px;   /* between stacked blocks in a section (tag, heading, body, cards): 64 / 56 / 48 */
+  --spacing-page-top: 150px;     /* top padding of an inner page's first section: 200 / 180 / 150 */
+  --spacing-grid-gap: 8px;       /* between cards in a grid */
+  --spacing-paragraph: 20px;     /* space between paragraphs (body, lead, serif styles) */
+  --spacing-paragraph-lg: 40px;  /* space after a heading inside rich text (H2 - H6) */
+
+  /* navigation (phone values; tablet & desktop below in :root) */
+  --spacing-nav-x: 20px;         /* bar padding, sides: 36 / 36 / 20 */
+  --spacing-nav-y: 20px;         /* bar padding, top (and bottom when closed) */
+  --spacing-nav-bottom: 40px;    /* open panel padding, bottom */
+  --spacing-nav-stack: 42px;     /* header <-> menu, links <-> line <-> contacts; between legal links */
+  --spacing-nav-stack-sm: 24px;  /* phone: links <-> button, contact <-> legal links */
+  --spacing-nav-links: 16px;     /* between menu links */
+  --spacing-nav-contact: 8px;    /* "Need Support?" <-> e-mail */
+  --spacing-logo-h: 36px;        /* logo row height */
+  --spacing-menu-icon-w: 34px;   /* menu icon box */
+  --spacing-menu-icon-h: 20px;
+  --spacing-menu-icon-short: 24px; /* short lines of the menu icon */
+  --spacing-menu-line: 2px;      /* menu icon line thickness */
+
+  /* shared blocks */
+  --spacing-section-first: 80px; /* top padding of the first section after the Home hero: 200 / 100 / 80 */
+  --spacing-stack-sm: 24px;      /* small stacks: card padding and inner gaps, tag <-> heading on phone */
+  --spacing-heading: 800px;      /* max width of a section heading */
+  --spacing-intro: 300px;        /* max width of the short intro line under a heading */
+  --spacing-text: 500px;         /* max width of a paragraph beside stats */
+  --spacing-icon-lg: 32px;       /* the thin plus before the intro line */
+  --spacing-icon-sm: 18px;       /* card title icon */
+  --spacing-icon-xs: 14px;       /* icon inside a small round button */
+  --spacing-card-text: 300px;    /* max width of a card's text: 225 / 300 / 300 */
+  --spacing-card-visual: 200px;  /* height of a card's picture area */
+  --spacing-xs: 8px;             /* small gaps: icon <-> label, between bars, chat rows */
+  --spacing-sm: 12px;            /* bubble padding, bar padding, bar <-> month */
+  --spacing-md: 16px;            /* phone mock padding, number <-> pill */
+  --spacing-3xs: 4px;            /* number row <-> its label */
+
+  /* video card (Analysis) */
+  --spacing-video-h: 380px;      /* video card height: 700 on tablet & desktop, 380 on phone */
+  --spacing-play: 60px;          /* round play button */
+  --spacing-play-icon: 22px;     /* play triangle */
+  --spacing-play-pulse: 5px;     /* the pulse ring starts this far outside the button */
+  --spacing-stat-gap: 6px;       /* big number <-> its label */
+
+  /* how it works (step cards) */
+  --spacing-step-gap: 40px;      /* step number <-> title */
+  --spacing-step-text: 300px;    /* max width of a step's title and text */
+
+  /* results (cards + before/after) */
+  --spacing-results-h: 1240px;   /* height of the results row: 520 / 920 / 1240 (rows share it equally) */
+  --spacing-results-overhang: 101%; /* the testimonial column is 1% taller than its row (as in the original) */
+  --spacing-card-pad: 32px;      /* padding of the results cards */
+  --spacing-quote: 200px;        /* max width of a short quote in a card */
+  --spacing-avatar-md: 42px;     /* testimonial avatar */
+  --spacing-handle: 64px;        /* before/after handle */
+  --spacing-chevron: 8px;        /* the handle's arrow heads */
+  --spacing-label-y: 8px;        /* before/after labels */
+  --spacing-label-x: 14px;
+
+  /* pricing */
+  --spacing-stack-md: 32px;      /* billing switch <-> plans; quote <-> founder: 42 / 42 / 32 */
+  --spacing-plan-gap: 32px;      /* between the blocks of a plan card */
+  --spacing-dash: 3px;           /* dashed line in a plan card */
+  --spacing-custom-gap: 80px;    /* custom plan card: min space between title block and e-mail */
+  --spacing-custom-h: 485px;     /* custom plan card height on tablet & phone (desktop: as tall as the plans) */
+  --spacing-email: 500px;        /* max width of the e-mail line */
+  --spacing-quote-lg: 750px;     /* max width of the founder's quote */
+
+  /* get started (CTA) + footer */
+  --spacing-strip-h: 64px;       /* accent word strip */
+  --spacing-strip-gap: 16px;     /* between strip words and dots */
+  --spacing-dot: 4px;            /* strip dot */
+  --spacing-video-col: 16px;     /* space right of the video column */
+  --spacing-field-h: 60px;       /* one-line form field */
+  --spacing-field-area: 100px;   /* message field, min height */
+  --spacing-field-y: 12px;       /* form field padding (top, right, bottom; none on the left) */
+  --spacing-form-gap: 32px;      /* between form fields; form <-> button */
+  --spacing-note: 290px;         /* max width of the small note under the button */
+  --spacing-intro-lg: 350px;     /* max width of a longer intro line (Get Started, About page) */
+  --spacing-cta-heading: 500px;  /* phone: max width of the CTA heading (desktop & tablet: heading) */
+  --spacing-footer-top: 120px;   /* footer columns padding top: 220 / 180 / 120 */
+  --spacing-footer-bottom: 24px; /* footer first column padding bottom: 64 / 56 / 24 */
+  --spacing-footer-gap: 48px;    /* footer column stacks: 64 / 56 / 48 */
+  --spacing-footer-text: 342px;  /* footer paragraph max width */
+  --spacing-footer-line: 54px;   /* short rule under the footer logo */
+  --spacing-newsletter: 250px;   /* newsletter line max width */
+  --spacing-icon-button: 12px;   /* arrow button padding */
+  --spacing-field-arrow: 6px;    /* arrow button <-> bottom of the newsletter field */
+  --spacing-bar-y: 32px;         /* bottom bar padding top & bottom */
+  --spacing-link-h: 30px;        /* footer menu link row */
+  --spacing-footer-stack: 48px;  /* footer first column: logo, line, text, contact: 64 / 64 / 48 */
+  --spacing-contact-gap: 8px;    /* "Get in touch" <-> e-mail: 2 / 2 / 8 */
+  --spacing-footer-cols: 10px;   /* between the two footer menu columns */
+  --spacing-bar-stack: 32px;     /* phone: between the bottom bar rows (tablet: md) */
+
+  /* about page */
+  --spacing-team-card: 430px;    /* team cards and the careers card: 510 / 471 / 430 */
+  --spacing-careers-title: 250px; /* careers card title max width */
+  --spacing-careers-text: 200px; /* careers card text max width */
+  --spacing-careers-gap: 40px;   /* careers card: heading <-> text (at least) */
+  --spacing-feature-text: 92%;   /* principle card: title and text width */
+  --spacing-feature-desc: 250px; /* principle card: text max width */
+  --spacing-text-gap: 10px;      /* principle card: title <-> text */
+  --spacing-icon-box: 48px;      /* principle card: accent icon square */
+  --spacing-quote: 600px;        /* Vision quote max width */
+  --spacing-author: 300px;       /* Vision author lines max width */
+  --spacing-vision-y: 80px;      /* Vision padding top & bottom: 120 / 120 / 80 */
+  --spacing-vision-x: 20px;      /* Vision padding sides: 40 / 40 / 20 */
+  --spacing-vision-inset: 0px;   /* Vision text inset from the sides: 64 / 42 / 0 */
+  --spacing-vision-gap: 24px;    /* Vision tag <-> quote: 42 / 42 / 24 */
+
+  /* journal */
+  --spacing-post-card: 550px;    /* journal card height (list on desktop: post-card-lg) */
+  --spacing-post-card-lg: 608px;
+  --spacing-post-pad-lg: 42px;   /* large journal card padding (small: card-pad) */
+  --spacing-post-title: 90%;     /* journal card title max width */
+  --spacing-post-date: 300px;    /* journal card date max width */
+  --spacing-article-title: 700px; /* article heading max width: 900 / 700 / full */
+  --spacing-article-body: 780px; /* article text max width */
+  --spacing-avatar-author: 48px; /* article author photo */
+  --spacing-author-text: 250px;  /* article author name and role max width */
+  --spacing-name-gap: 2px;       /* author name <-> role */
+  --spacing-article-heading: 40px; /* article: space above a section heading */
+  --spacing-article-p: 20px;     /* article: space above a paragraph or quote */
+  --spacing-article-list: 6px;   /* article: space above a list */
+  --spacing-list-indent: 1.2266em; /* article list text indent (bullet / number sits in it) */
+  --spacing-quote-bar: 2px;      /* accent bar left of a quote */
+  --spacing-quote-indent: 22px;  /* quote text <-> its left edge */
+
+  /* careers */
+  --spacing-box-pad: 32px;       /* job page "About the role" box padding: 42 / 42 / 32 */
+  --spacing-job-text: 750px;     /* job text max width */
+  --spacing-job-row-gap: 6px;    /* job card detail row: label <-> value (location row: xs) */
+
+  /* contact */
+  --spacing-form-bottom: 34px;   /* contact form: last field <-> button */
+  --spacing-contact-text: 300px; /* contact card title and text max width */
+
+  /* legal + 404 */
+  --spacing-legal-gap: 32px;     /* legal: intro row <-> text: 64 / 48 / 32 */
+  --spacing-legal-date: 300px;   /* legal: "Last updated" column max width */
+  --spacing-notfound-gap: 24px;  /* 404: number <-> text <-> button: 42 / 32 / 24 */
+  --spacing-notfound-text: 300px; /* 404: text max width: 500 / 500 / 300 */
+
+  /* faq */
+  --spacing-faq-icon: 25px;      /* "talk to us" icon */
+  --spacing-icon-md: 24px;       /* plus in a question */
+  --spacing-question: 90%;       /* question text width in its row */
+  --spacing-answer: 85%;         /* answer text width */
+
+  /* concept (sticky accent panel + photo grid) */
+  --spacing-concept-stack: 24px; /* title block <-> button: 32 / 32 / 24 */
+  --spacing-concept-pad: 20px;   /* photo grid padding: 64 / 64 / 20 */
+  --spacing-concept-row: 48px;   /* between photos in a column */
+  --spacing-concept-corner: 32px; /* corner plus marks: inset from the panel edges */
+  --spacing-concept-tail: 864px; /* empty run after the grid while the panel stays on screen */
+
+  /* ticker (photo strip in a card) */
+  --spacing-ticker-image-w: 180px;
+
+  /* chat mock (About Us card 2) */
+  --spacing-chat-w: 280px;       /* max width of the phone screen */
+  --spacing-chat-head: 193px;    /* header row width */
+  --spacing-chat-head-pad: 7px;  /* header row padding */
+  --spacing-avatar: 24px;
+  --spacing-chat-bubble: 90%;    /* bubble width (share of the row) */
+  --spacing-send: 30px;          /* round send button */
+  --spacing-input-x: 16px;       /* input: left padding */
+  --spacing-phone-frame: 2px;    /* phone screen outline (top and sides) */
+
+  /* metric card (About Us card 3) */
+  --spacing-graph-h: 158px;      /* tallest bar incl. its month label */
+  --spacing-bar-w: 40px;         /* bar width on tablet & phone (desktop: bars share the width) */
+  --spacing-pill-y: 6px;         /* small white pill ("+14% Glow") */
+  --spacing-pill-x: 7px;
+
+  /* buttons */
+  --spacing-button-y: 14px;      /* Primary Button */
+  --spacing-button-x: 24px;
+  --spacing-button-roll: 52px;   /* hover: the label rolls up this far, a copy comes in from below */
+
+  /* hero (phone values; tablet & desktop below in :root) */
+  --spacing-hero-x: 20px;        /* content padding, sides: 40 / 40 / 20 */
+  --spacing-hero-bottom: 20px;   /* content padding, bottom: 40 / 40 / 20 */
+  --spacing-hero-stack: 48px;    /* lead <-> title block: 170 / 64 / 48 */
+  --spacing-hero-title-gap: 4px; /* subtitle <-> big title */
+  --spacing-hero-lead: 370px;    /* max width of the lead */
+  --spacing-hero-sub: 700px;     /* max width of the subtitle */
+  --spacing-hero-title: 1000px;  /* max width of the big title */
+  --spacing-hero-mark-out: 36px; /* vertical year mark: its (unrotated) box sticks out this far past the right edge */
+  --spacing-hero-mark-gap: 10px; /* year <-> ruler <-> number */
+  --spacing-ticks-gap: 8px;      /* between ruler ticks */
+  --spacing-ticks-bottom: 6px;   /* ruler sits this far above the text baseline row */
+  --spacing-tick-sm: 10px;       /* ruler tick heights */
+  --spacing-tick-md: 16px;
+  --spacing-tick-lg: 28px;
+
+  /* ---------- Aspect ratios ---------- */
+  --aspect-*: initial;
+  --aspect-square: 1 / 1;
+  --aspect-steps: 1.25;          /* How it Works photo on phones (desktop: full height of the steps) */
+  --aspect-steps-wide: 1.492;    /* the same photo on tablets */
+  --aspect-portrait-video: 1080 / 1936; /* the Get Started video (portrait) */
+  --aspect-landscape: 3 / 2;     /* About page: wide office photo */
+  --aspect-photo: 4 / 3;         /* About page: team photos */
+
+  /* ---------- Radii ---------- */
+  --radius-*: initial;
+  --radius-card: 16px;           /* cards and image frames */
+  --radius-image-sm: 12px;       /* small photos inside a card (ticker) */
+  --radius-bubble: 12px;         /* chat bubble */
+  --radius-icon-box: 12px;       /* principle card icon square */
+  --radius-quote-bar: 1px;       /* article quote bar */
+  --radius-bar: 8px;             /* graph bars */
+  --radius-input: 24px;          /* chat input */
+  --radius-phone: 32px;          /* phone screen top corners */
+  --radius-video: 24px;          /* video card */
+  --radius-faq: 14px;            /* FAQ question card */
+  --radius-icon-button: 10px;    /* newsletter arrow button */
+  /* round elements: rounded-full (built in) */
+
+  /* ---------- Shadows ---------- */
+  --shadow-*: initial;
+  /* Filled in as sections need them. New elements get no shadow. */
+
+  /* ---------- Blur ---------- */
+  --blur-*: initial;
+  --blur-nav: 3px;               /* phone only: behind the closed bar once the page is scrolled */
+  --blur-video: 3px;             /* video card picture on hover (not while playing) */
+
+  /* ---------- Motion ---------- */
+  --ease-*: initial;
+  /* Reveal Preloader: tween 1s */
+  --ease-preloader: cubic-bezier(0.96, -0.02, 0.38, 1.01);
+  /* same curve: the menu panel opening and closing (tween 0.5s) */
+  --ease-curtain: cubic-bezier(0.96, -0.02, 0.38, 1.01);
+  /* Hero photo settling in (tween 1.7s) */
+  --ease-hero-image: cubic-bezier(0, 1.07, 0.25, 0.98);
+  /* default tween: menu link underline */
+  --ease-soft: cubic-bezier(0.44, 0, 0.56, 1);
+  /* spring "stiffness 121, damping 27, mass 0.3": hero texts drop in */
+  --ease-spring-drop: linear(0, 0.1175, 0.2573, 0.3762, 0.4761, 0.5579, 0.6287, 0.6882, 0.7381, 0.7801, 0.8153, 0.8449, 0.8697, 0.8906, 0.9081, 0.9225, 0.9349, 0.9453, 0.9541, 0.9614, 0.9676, 0.9728, 0.9772, 0.9808, 0.9839, 0.9864, 0.9886, 0.9904, 0.9919, 0.9932, 0.9943, 0.9952, 0.996, 0.9966, 0.9972, 0.9976, 0.998, 0.9983, 0.9986, 0.9988, 1);
+  /* spring "duration 0.9s, bounce 0": preloader letters */
+  --ease-spring-letters: linear(0, 0.0231, 0.0809, 0.1542, 0.2392, 0.3221, 0.4061, 0.4814, 0.5535, 0.6154, 0.6729, 0.721, 0.7648, 0.801, 0.8334, 0.8598, 0.8833, 0.9022, 0.9189, 0.9324, 0.9441, 0.9535, 0.9617, 0.9682, 0.9739, 0.9784, 0.9823, 0.9854, 0.988, 0.9901, 0.9919, 0.9934, 0.9946, 0.9955, 0.9964, 0.997, 0.9976, 0.998, 0.9984, 0.9987, 1);
+  /* spring "duration 0.8s, bounce 0.05": button label roll */
+  --ease-spring-button: linear(0, 0.0206, 0.0704, 0.1379, 0.2147, 0.2949, 0.3743, 0.4504, 0.5214, 0.5864, 0.645, 0.6971, 0.7431, 0.7832, 0.8179, 0.8478, 0.8734, 0.8951, 0.9134, 0.9288, 0.9417, 0.9525, 0.9614, 0.9688, 0.9749, 0.9798, 0.9839, 0.9872, 0.9899, 0.992, 0.9938, 0.9951, 0.9962, 0.9971, 0.9978, 0.9984, 0.9988, 0.9991, 0.9993, 0.9995, 1);
+  /* tween: words of a heading rise in */
+  --ease-words: cubic-bezier(0.44, 0, 0.13, 0.96);
+  /* spring "duration 1.2s, bounce 0.1": cards fade in */
+  --ease-spring: linear(0, 0.033, 0.1118, 0.2136, 0.323, 0.4304, 0.5301, 0.619, 0.696, 0.761, 0.815, 0.8588, 0.894, 0.9217, 0.9432, 0.9597, 0.9721, 0.9814, 0.9881, 0.9928, 0.9962, 0.9984, 0.9999, 1.0008, 1.0013, 1.0015, 1.0015, 1.0015, 1.0013, 1.0012, 1);
+  /* spring "duration 0.4s, bounce 0.1": FAQ answer opens / closes */
+  --ease-spring-accordion: linear(0, 0.035, 0.1217, 0.2241, 0.3327, 0.4463, 0.5433, 0.6293, 0.7088, 0.7707, 0.8218, 0.8662, 0.899, 0.9248, 0.9463, 0.9615, 0.9729, 0.982, 0.9881, 0.9925, 0.9958, 0.9979, 0.9993, 1.0002, 1.0007, 1.001, 1.0011, 1.0011, 1.001, 1.0009, 1);
+  /* tween: plan cards float in */
+  --ease-float: cubic-bezier(0.68, 0, 0, 0.99);
+  --ease-cards: cubic-bezier(0.7, 0.07, 0.43, 0.84); /* principle cards */
+  --ease-page: cubic-bezier(0.27, 0, 0.51, 1); /* page change: the new page wipes in */
+  --ease-spring-card: linear(0, 0.0404, 0.1339, 0.2534, 0.3804, 0.5028, 0.6137, 0.7096, 0.7894, 0.8535, 0.9035, 0.9411, 0.9685, 0.9876, 1.0002, 1.008, 1.0122, 1.0139, 1.014, 1.013, 1.0115, 1.0097, 1.008, 1.0063, 1.0048, 1.0036, 1.0025, 1.0017, 1.0011, 1.0006, 1); /* spring 0.6s, bounce 0.2 (job card opens) */
+  /* tween: play button fades out / in */
+  --ease-play: cubic-bezier(0.82, 0.11, 0.37, 0.82);
+  /* spring "stiffness 180, damping 33, mass 1": section blocks rise into view */
+  --ease-spring-firm: linear(0, 0.1088, 0.2918, 0.4602, 0.5953, 0.6988, 0.7765, 0.8343, 0.8773, 0.9091, 0.9327, 0.9502, 0.9631, 0.9727, 0.9798, 0.985, 0.9889, 0.9918, 0.9939, 0.9955, 0.9967, 0.9975, 0.9982, 0.9986, 1);
+  /* spring "stiffness 210, damping 30": menu links drop in when the menu opens */
+  --ease-spring-menu: linear(0, 0.0303, 0.0991, 0.1865, 0.28, 0.3721, 0.4586, 0.533, 0.6034, 0.665, 0.7184, 0.7641, 0.803, 0.8359, 0.8636, 0.8868, 0.9062, 0.9224, 0.9358, 0.947, 0.9558, 0.9635, 0.9699, 0.9752, 0.9796, 0.9832, 0.9862, 0.9886, 0.9906, 0.9923, 0.9937, 0.9948, 0.9957, 0.9965, 0.9971, 0.9976, 0.998, 0.9984, 0.9987, 0.9989, 1);
+  /* spring "stiffness 400, damping 40": navigation hides / returns on scroll */
+  --ease-spring-hide: linear(0, 0.0574, 0.1799, 0.3201, 0.4544, 0.5721, 0.6703, 0.7494, 0.8115, 0.8596, 0.8961, 0.9236, 0.9442, 0.9594, 0.9706, 0.9787, 0.9847, 0.989, 0.9921, 0.9944, 0.996, 0.9972, 0.998, 0.9986, 1);
+  /* spring "duration 1s, bounce 0.4": menu icon lines <-> cross */
+  --ease-spring-bouncy: linear(0, 0.0291, 0.1044, 0.2095, 0.3307, 0.4572, 0.5805, 0.6946, 0.7957, 0.8814, 0.9512, 1.0054, 1.045, 1.0717, 1.0874, 1.0941, 1.0939, 1.0885, 1.0796, 1.0687, 1.0568, 1.0449, 1.0336, 1.0235, 1.0147, 1.0074, 1.0016, 0.9972, 0.9942, 0.9923, 0.9913, 0.991, 0.9913, 0.992, 0.993, 0.9941, 0.9952, 0.9963, 0.9974, 0.9983, 1);
+}
+
+/* Values that are not Tailwind namespaces */
+:root {
+  --motion-preloader-duration: 1s;   /* with --ease-preloader */
+  --motion-scroll-lerp: 0.1;         /* smooth wheel scrolling: share of the distance covered each frame (intensity 50) */
+
+  /* layers */
+  --layer-nav: 10;                   /* navigation stays above sections */
+  --layer-preloader: 20;             /* preloader covers everything while the page loads */
+
+  /* preloader (Home only) */
+  --motion-preloader-hold: 1.3s;     /* the curtain stays, then slides up */
+  --motion-preloader-blur: 9px;      /* the curtain blurs while it leaves */
+  --motion-preloader-distance: 1400px; /* the curtain travels this far up (top 0 -> -1400) */
+  --motion-grain-opacity: 0.02;      /* grain texture over the curtain */
+  --motion-letters-duration: 0.9s;   /* each letter of the word, with --ease-spring-letters */
+  --motion-letters-stagger: 0.05s;   /* next letter starts this much later */
+  --motion-letters-distance: 240px;  /* letters rise from this far below */
+  --motion-letters-blur: 10px;       /* and sharpen from this blur */
+
+  /* navigation */
+  --motion-nav-open-duration: 0.5s;  /* menu panel opens / closes, with --ease-curtain */
+  --motion-nav-hide-duration: 0.46s; /* with --ease-spring-hide */
+  --motion-nav-hide-distance: 40px;  /* slides up 40px and fades out on scroll down */
+  --motion-menu-icon-duration: 1s;   /* with --ease-spring-bouncy */
+  --motion-menu-icon-cross: 45deg;   /* lines -> cross */
+  --motion-menu-icon-cross-hover: 30deg; /* cross while hovered */
+  --motion-link-line-duration: 0.39s; /* menu link underline grows, with --ease-soft */
+  --motion-menu-link-duration: 0.72s; /* menu links drop in from 40px above, with --ease-spring-menu */
+  --motion-menu-link-distance: 40px;
+  --motion-menu-delay-1: 0.06s;       /* per link, top to bottom (as in the original design; desktop & tablet: first link 0s) */
+  --motion-menu-delay-2: 0.06s;
+  --motion-menu-delay-3: 0.12s;
+  --motion-menu-delay-4: 0.12s;
+  --motion-menu-delay-5: 0.24s;
+  --motion-button-duration: 0.8s;    /* button label roll, with --ease-spring-button */
+  --motion-link-duration: 0.4s;
+  --motion-link-fast: 0.2s;          /* underlined contact links turn accent, with --ease-soft */      /* text link hover: white -> accent, with --ease-soft */
+
+  /* section blocks */
+  --motion-rise-duration: 1.05s;      /* blocks rise into view, with --ease-spring-firm */
+  --motion-rise-distance: 0px;        /* rises from this far below while fading in: 50px tablet & desktop, phone 0 (fade only) */
+  --motion-ticker-speed: 30;          /* photo strip: pixels per second, endless, left */
+  --motion-counter-step: 60ms;        /* counter: one number per step (About Us metric) */
+  --motion-counter-step-slow: 100ms;  /* counter: one number per step (Analysis stats) */
+  --motion-rise-distance-sm: 0px;     /* a block inside a rising block rises a little more: 20px (phone 0) */
+  --motion-fade-duration: 1.2s;       /* cards fade in (Reveal "fade"), with --ease-spring */
+  --motion-fade-delay-1: 0.1s;        /* Results: left card */
+  --motion-fade-delay-2: 0.2s;        /* Results: testimonial */
+  --motion-fade-delay-3: 0.3s;        /* About page: team cards one by one */
+  --motion-fade-delay-4: 0.4s;
+  --motion-parallax: 0;               /* parallax photos move this much per pixel scrolled: desktop 0.2667 (intensity 40); phone & tablet 0 = still */
+  --motion-parallax-scale: 1.05;      /* a parallax photo is this much taller than its frame */
+  --motion-quote-duration: 0.3s;      /* Vision quote floats in, with --ease-float */
+  --motion-cards-duration: 0.5s;      /* principle cards rise into view, with --ease-cards */
+  --motion-cards-distance: 0px;
+  --motion-card-hover-duration: 0.4s;
+  --motion-page-duration: 0.5s;       /* page change: the new page wipes in from the bottom, with --ease-page */
+  --motion-card-open-duration: 0.6s;  /* job card opens / closes and the chevron turns, with --ease-spring-card */
+  --motion-lift-duration: 0.6s;       /* job page blocks rise into view (Reveal "lift"), with --ease-soft */
+  --motion-lift-distance: 0px;
+  --gradient-post-shade: linear-gradient(to bottom, transparent 0%, var(--color-shade) 80%); /* journal card shading (at 50%) */
+  --motion-slide-duration: 0.6s;      /* blocks slide in from the left (Reveal "slide"), with --ease-soft */
+  --motion-slide-distance: 0px;
+  --motion-words-duration: 0.9s;      /* heading words rise in one by one, with --ease-words */
+  --motion-words-distance: 0px;
+  --motion-words-stagger: 0.02s;
+  --motion-float-duration: 1.6s;      /* plan cards float in (Reveal "float"), with --ease-float */
+  --motion-float-distance: 0px;       /* plan cards: 50px (phone 0); the custom plan card floats --motion-rise-distance-sm */
+  --motion-plans-delay: 0.3s;         /* billing switch and cards start 0.3s after coming into view */
+  --motion-compare-jump: 0.3s;
+  --motion-accordion-duration: 0.4s;  /* FAQ answer opens / closes and the plus turns, with --ease-spring-accordion */
+  --motion-accordion-turn: 180deg;
+  --motion-grain-cta-opacity: 0;      /* grain over the Get Started block: 0.03 / 0.02 / none */
+  --motion-arrow-duration: 0.2s;      /* newsletter arrow turns on hover, with --ease-soft */
+  --motion-arrow-turn: 45deg;
+  --motion-spinner: 1s;               /* form button spinner: one turn, linear, endless */
+  --motion-roll-blur: 4px;            /* form button label blurs while it rolls */        /* before/after: clicking a label slides the divider all the way */
+  --motion-play-duration: 0.45s;      /* play button fades out while the video plays; card hover; with --ease-play */
+  --motion-video-hover-scale: 1.1;    /* video card picture grows on hover (and blurs, --blur-video) */
+  --motion-pulse-duration: 1s;        /* play button pulse ring: grows and fades, endless, linear */
+  --motion-pulse-scale: 1.8;
+  --motion-pulse-opacity: 0.3;        /* ring opacity at the start of each pulse */
+  --motion-grain-video-opacity: 0.04; /* grain over the video card */
+  --motion-grain-concept-opacity: 0.05; /* grain over the accent panel (Concept) */
+  --motion-concept-tilt: 12deg;       /* photo grid leans back this much and straightens as it enters */
+  --concept-perspective: 1200px;      /* depth of that tilt */
+  --nav-scroll-offset: 220;           /* phone: the bar gets its blur after this many px of scroll */
+
+  /* hero */
+  --motion-hero-speed: 1;             /* the hero scrolls at this share of the page speed (desktop & tablet 0.8, About slides over it; phone 1 = no effect) */
+  --motion-hero-image-duration: 1.7s; /* with --ease-hero-image */
+  --motion-hero-image-delay: 1.5s;    /* starts as the preloader leaves */
+  --motion-hero-image-distance: 0px;  /* photo comes down from 200px above (phone: no movement) */
+  --motion-hero-image-scale: 1;       /* and shrinks 150% -> 100% (phone: no movement) */
+  --motion-drop-duration: 1.48s;      /* hero texts drop in from above, with --ease-spring-drop */
+  --motion-drop-distance: 0px;
+  --motion-hero-title-delay: 1.5s;    /* subtitle and big title */
+  --motion-hero-lead-delay: 1.7s;     /* lead */
+  --motion-hero-mark-delay: 1.8s;     /* vertical year mark */
+  --hero-lead-indent: 2.58em;         /* first line of the lead starts indented */
+
+  /* liquid hover (desktop hero photo) — "Liquid Hover": resolution 4, cursor 0.5, power 0.6, distortion 0.5 */
+  --liquid-resolution: 256;           /* simulation grid height */
+  --liquid-cursor-size: 0.0025;       /* splat radius */
+  --liquid-cursor-power: 0.03;        /* how strongly the cursor pushes */
+  --liquid-distortion: 0.5;           /* how far the photo bends */
+  --liquid-overscan: 1.2;             /* the canvas is 120% of the photo so ripples can push the edges out */
+}
+
+@media (width >= 810px) {
+  :root {
+    /* Blocks and words move in only from tablet up; on phones they just fade in (calmer on a small screen). */
+    --motion-rise-distance: 50px;
+    --motion-rise-distance-sm: 20px;
+    --motion-cards-distance: 40px;
+    --motion-lift-distance: 40px;
+    --motion-slide-distance: 40px;
+    --motion-words-distance: 10px;
+    --motion-float-distance: 50px;
+    --motion-drop-distance: 40px;
+    --motion-hero-image-distance: 200px;
+    --motion-hero-image-scale: 1.5;
+    --spacing-section-x: 32px;
+    --spacing-section-y: 100px;
+    --spacing-section-gap: 56px;
+    --spacing-page-top: 180px;
+    --spacing-nav-x: 36px;
+    --spacing-hero-x: 40px;
+    --spacing-hero-bottom: 40px;
+    --spacing-hero-stack: 64px;
+    --spacing-section-first: 100px;
+    --spacing-concept-stack: 32px;
+    --spacing-concept-pad: 64px;
+    --spacing-results-h: 920px;
+    --spacing-stack-md: 42px;
+    --spacing-footer-top: 180px;
+    --spacing-footer-bottom: 56px;
+    --spacing-footer-gap: 56px;
+    --spacing-footer-stack: 64px;
+    --spacing-team-card: 471px;
+    --spacing-box-pad: 42px;
+    --spacing-video-h: 700px;
+    --motion-hero-speed: 0.8;
+    --spacing-legal-gap: 48px;
+    --spacing-notfound-gap: 32px;
+    --spacing-notfound-text: 500px;
+    --spacing-vision-y: 120px;
+    --spacing-vision-x: 40px;
+    --spacing-vision-inset: 42px;
+    --spacing-vision-gap: 42px;
+    --spacing-contact-gap: 2px;
+    --motion-grain-cta-opacity: 0.02;
+    --motion-menu-delay-1: 0s;
+  }
+}
+@media (width >= 1200px) {
+  :root {
+    --spacing-section-x: 40px;
+    --spacing-section-y: 120px;
+    --spacing-section-gap: 64px;
+    --spacing-page-top: 200px;
+    --spacing-hero-stack: 170px;
+    --spacing-section-first: 200px;
+    --spacing-card-text: 225px;
+    --spacing-results-h: 520px;
+    --spacing-footer-top: 220px;
+    --spacing-footer-bottom: 64px;
+    --spacing-footer-gap: 64px;
+    --spacing-team-card: 510px;
+    --spacing-vision-inset: 64px;
+    --spacing-article-title: 900px;
+    --motion-parallax: 0.2667;
+    --spacing-legal-gap: 64px;
+    --spacing-notfound-gap: 42px;
+    --motion-grain-cta-opacity: 0.03;
+  }
+}
+
+/*
+ * ---------- Text styles (the design's text styles, same names) ----------
+ * Sizes: phone first, then md (tablet) and lg (desktop).
+ * Styles without a size step keep one size everywhere.
+ * Where a style sets no line height, 1.2 is used.
+ */
+
+/* Heading 1 — page title on Home only (h1) */
+@utility type-h1 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  @variant md { font-size: 140px; }
+  @variant lg { font-size: 190px; }
+}
+/* Heading 2 — section headings; page title on inner pages (tagged h1 there) */
+@utility type-h2 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  @variant md { font-size: 64px; }
+  @variant lg { font-size: 80px; }
+}
+/* Heading 2 (Large) */
+@utility type-display {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--color-text-primary);
+  @variant md { font-size: 140px; }
+  @variant lg { font-size: 190px; }
+}
+@utility type-h2-lg {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 56px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  @variant md { font-size: 100px; line-height: 98px; }
+  @variant lg { font-size: 144px; line-height: 128px; }
+}
+@utility type-h3 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  @variant md { font-size: 38px; }
+  @variant lg { font-size: 40px; }
+}
+@utility type-h4 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  @variant md { font-size: 26px; }
+  @variant lg { font-size: 32px; }
+}
+@utility type-h5 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  @variant lg { font-size: 28px; }
+}
+@utility type-h6 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  color: var(--color-text-primary);
+  @variant md { font-size: 24px; }
+}
+
+/* Serif accents (Instrument Serif) */
+/* L */
+@utility type-serif-l {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: var(--color-text-primary);
+  @variant md { font-size: 50px; }
+  @variant lg { font-size: 62px; }
+}
+/* M — italic, accent color */
+@utility type-serif-m {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  color: var(--color-accent);
+}
+/* S */
+@utility type-serif-s {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.8px;
+  color: var(--color-text-primary);
+}
+
+/* Lead — hero / intro lede */
+@utility type-quote {
+  font-family: var(--font-sans);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-primary);
+  @variant lg { font-size: 18px; }
+}
+@utility type-lead {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+  @variant lg { font-size: 20px; }
+}
+/* Lead Bold */
+@utility type-lead-bold {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  color: var(--color-text-primary);
+  @variant md { font-size: 20px; }
+}
+/* Body Large */
+@utility type-body-lg {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+}
+/* Body Large Bold */
+@utility type-body-lg-bold {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: var(--color-text-primary);
+}
+/* Body — supporting copy */
+@utility type-body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  color: var(--color-text-primary);
+}
+/* Body Bold */
+@utility type-body-bold {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  color: var(--color-text-primary);
+}
+/* Body Small Bold — metadata only (dates, role type, location) */
+@utility type-body-sm-bold {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+}
+/* Caption Bold — metadata only */
+@utility type-caption-bold {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+}
+
+/* Text link (link style): white, turns accent on hover. Pair with any type-* style.
+   Used for e-mail and legal links (menu, footer) and links inside texts. */
+@utility text-link {
+  color: var(--color-text-primary);
+  transition: color var(--motion-link-duration) var(--ease-soft);
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+
+/* Small inline styles used inside UI mock-ups (set on the text, not a text style) */
+/* Counter number (About Us metric) */
+@utility type-counter {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.07em;
+  color: var(--color-text-primary);
+}
+/* Big stat number (Analysis) */
+@utility type-counter-lg {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 64px;
+  line-height: normal;
+  letter-spacing: -0.07em;
+  color: var(--color-text-primary);
+}
+/* Chat bubble text */
+@utility type-chat {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+}
+/* Tiny pill label ("+14% Glow") */
+@utility type-pill {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-text-dark);
+}
+
+/* Text typed into a form field (set on the field) */
+@utility type-field {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+@utility type-field-sm {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}

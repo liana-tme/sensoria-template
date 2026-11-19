@@ -1,0 +1,20 @@
+.word {
+  display: inline-block;
+  opacity: 0;
+  translate: 0 var(--motion-words-distance);
+}
+.shown .word {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--motion-words-duration) var(--ease-words),
+    translate var(--motion-words-duration) var(--ease-words);
+  transition-delay: calc(var(--i) * var(--motion-words-stagger));
+}
+@media (prefers-reduced-motion: reduce) {
+  .word {
+    opacity: 1;
+    translate: none;
+    transition: none;
+  }
+}

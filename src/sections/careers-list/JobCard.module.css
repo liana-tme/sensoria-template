@@ -1,0 +1,19 @@
+/* Details grow in when the card opens (variant change: 0.6s spring). Phone: always open. */
+.more {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows var(--motion-card-open-duration) var(--ease-spring-card);
+}
+@media (width >= 810px) {
+  .card:not(.open) .more {
+    grid-template-rows: 0fr;
+  }
+}
+/* The chevron points down while closed and up when open. */
+.chevron {
+  rotate: var(--motion-accordion-turn);
+  transition: rotate var(--motion-card-open-duration) var(--ease-spring-card);
+}
+.open .chevron {
+  rotate: 0deg;
+}

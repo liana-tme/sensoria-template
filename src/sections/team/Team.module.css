@@ -1,0 +1,17 @@
+/* Dark fade over the bottom of a portrait. */
+.shade {
+  background: linear-gradient(to bottom, transparent, var(--color-shade));
+}
+/* Cards fade in one after another. */
+.d1 {
+  --reveal-delay: var(--motion-fade-delay-1);
+}
+.d2 {
+  --reveal-delay: var(--motion-fade-delay-2);
+}
+.d3 {
+  --reveal-delay: var(--motion-fade-delay-3);
+}
+.d4 {
+  --reveal-delay: var(--motion-fade-delay-4);
+}

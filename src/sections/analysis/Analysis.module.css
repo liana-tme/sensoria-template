@@ -1,0 +1,4 @@
+/* The paragraph rises a little on top of the whole row (20px inside the 50px row). */
+.text {
+  --motion-rise-distance: var(--motion-rise-distance-sm);
+}

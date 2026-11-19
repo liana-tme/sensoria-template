@@ -1,0 +1,13 @@
+/* Phone screen in card 2: outline on top and sides only (drawn inside, takes no room), round top corners. */
+.phone {
+  border-radius: var(--radius-phone) var(--radius-phone) 0 0;
+  box-shadow:
+    inset 0 var(--spacing-phone-frame) 0 var(--color-border),
+    inset var(--spacing-phone-frame) 0 0 var(--color-border),
+    inset calc(var(--spacing-phone-frame) * -1) 0 0 var(--color-border);
+}
+/* Bar values read bottom to top (text turned -90°). */
+.vertical {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+}

@@ -1,0 +1,1419 @@
+{
+  "images": {
+    "public/images/about/assistant-avatar.png": "2f8fc66c769b1b0b",
+    "public/images/about/portrait-daisies.png": "4f520c2becef7c2c",
+    "public/images/about/portrait-lilies.png": "b4bc07ad198fa72a",
+    "public/images/about/portrait-wildflowers.png": "9a0ac8ad377fdbdc",
+    "public/images/about/profile-sunlight.png": "1dde6c0a4148e885",
+    "public/images/about-intro/office-greenery.webp": "861bbeda9c2b5064",
+    "public/images/about-intro/team-meeting.png": "1eeed3a263e50ae1",
+    "public/images/about-intro/team-talking.png": "a3328d1f8cbb6eb3",
+    "public/images/analysis/portrait-motion-blur.png": "64ea2677cc3842d3",
+    "public/images/concept/portrait-golden-blur.png": "ecbe710e8515c47c",
+    "public/images/concept/portrait-neon-light.png": "2a9954e55c493f35",
+    "public/images/concept/portrait-pastel-tulle.png": "710fa310c148bcb1",
+    "public/images/concept/portrait-soft-motion.png": "8af7585f688237c8",
+    "public/images/concept/portrait-violet-light.png": "630756f900f23b72",
+    "public/images/get-started/portrait-blonde.webp": "776b44852a4d41cf",
+    "public/images/hero/portrait-light.webp": "7bc170944ec489de",
+    "public/images/how-it-works/serum-dropper.png": "983ce09d0e373df9",
+    "public/images/journal/authors/aria-thorne.png": "7cb217dfc378b5f4",
+    "public/images/journal/authors/elena-rossi.png": "06f0bee4479d6f72",
+    "public/images/journal/authors/elias-vance.png": "a6fa5fc0b6182248",
+    "public/images/journal/authors/julian-marwa.png": "018f2597a94dcf00",
+    "public/images/journal/authors/marcus-thorne.png": "ad8c6e1750422cec",
+    "public/images/journal/authors/sarah-chen.png": "5d40446affac1a55",
+    "public/images/journal/data-accuracy-in-neural-skin-diagnostics.png": "2e3b78e8bdba1432",
+    "public/images/journal/environmental-impact-on-neural-health-diagnostics.png": "61aee9618b4cc72f",
+    "public/images/journal/neural-synthesis-for-automated-ingredient-mapping.png": "72191840c97e30d3",
+    "public/images/journal/predictive-modeling-for-proactive-dermal-analysis.png": "d415763309eeb36f",
+    "public/images/journal/security-protocols-for-biometric-data-encryption.png": "b46419d0dd53d5be",
+    "public/images/journal/technical-systems-for-automated-dermal-mapping.png": "b937e4da6f5a1b07",
+    "public/images/pricing/founder-portrait.jpg": "ad69e1c19137db81",
+    "public/images/results/skin-after.png": "d8fd0677349782d2",
+    "public/images/results/skin-before.png": "5c8a264bb7ffab33",
+    "public/images/team/elena-vance.png": "6707d5a0e58fd8e5",
+    "public/images/team/marcus-thorne.png": "e28b29344a30bf9a",
+    "public/images/team/sienna-grey.png": "3e946b00e5e7b799",
+    "public/images/vision/portrait-flowers-motion.png": "5e6bed27b251c930",
+    "src/app/opengraph-image.jpg": "2284b21ad5ee795a"
+  },
+  "videos": {
+    "public/videos/routine-portrait.mp4": "5ef169066d1df7b7",
+    "public/videos/skin-analysis.mp4": "43216266e8000504"
+  },
+  "docs": {
+    "src/content/journal/data-accuracy-in-neural-skin-diagnostics.md": "07e8b2010be52976",
+    "src/content/journal/environmental-impact-on-neural-health-diagnostics.md": "80568bfb03d51216",
+    "src/content/journal/neural-synthesis-for-automated-ingredient-mapping.md": "195dd770597e8067",
+    "src/content/journal/predictive-modeling-for-proactive-dermal-analysis.md": "ef477344dabdf496",
+    "src/content/journal/security-protocols-for-biometric-data-encryption.md": "a8ed6b68ee98a0a4",
+    "src/content/journal/technical-systems-for-automated-dermal-mapping.md": "377bcf429c5a6ba8",
+    "src/content/careers/ai-research-engineer.md": "17ce0e9e267a2b8d",
+    "src/content/careers/derm-specialist.md": "21673d58543ea5e1",
+    "src/content/careers/growth-marketing-lead.md": "fb74c6dec25914cd",
+    "src/content/careers/operations-manager.md": "4d9424ade17a50e2",
+    "src/content/careers/senior-product-designer.md": "1a09c1fd71997a02",
+    "src/content/legal/privacy-policy.md": "abac7fe60dc61c1a",
+    "src/content/legal/terms-of-service.md": "5fc9cdca9697d496"
+  },
+  "texts": [
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "[About Us]"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Smart analysis"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "That adapts"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Stop guessing."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Sensoria uses neural mapping to understand what your skin needs in real-time."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "No fluff, just results."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Smart Analysis"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "High-precision neural mapping that detects subtle skin changes."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Woman among orange lilies and palm leaves."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Woman behind soft yellow and pink wildflowers."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Profile of a woman in warm dappled sunlight."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Woman surrounded by daisies on a pink background."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Adaptive Rituals"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Dynamic routines that automatically adjust to your environment."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Sensoria AI"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "I’ve adjusted your routine to protect your skin from today’s high humidity."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Analyze my glow..."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Glow Tracking"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Smart metrics to track your radiance progress in real-time."
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "+14% Glow"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Vitality index"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Jan"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Feb"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Mar"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Apr"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "May"
+    },
+    {
+      "file": "src/sections/about/content.ts",
+      "text": "Jun"
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "About the"
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "Sensoria Team"
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "Sensoria office with large windows and green plants."
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "[Who we are]"
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "Sensoria is a team of AI engineers and skincare experts dedicated to clinical-grade analysis."
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "We built this system to replace generic beauty advice with precise, neural-driven data."
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "By mapping thousands of dermal points,"
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "we provide you with a scientific roadmap to healthier skin every single day."
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "Driven by data, not trends."
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "Our technology adapts to your biology in real-time."
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "Group of Sensoria team members talking and smiling together in the office."
+    },
+    {
+      "file": "src/sections/about-intro/content.ts",
+      "text": "Sensoria team members around a table in a meeting, one raising both hands while talking."
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "[Analysis]"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "Intelligence"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "Portrait of a woman with healthy glowing skin, framed by colourful motion blur."
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "how Sensoria analyses your skin"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "Scan accuracy"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "Live monitoring"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "Sync speed"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "Our advanced neural engine"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "processes thousands of data points per scan,"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "ensuring your skincare rituals are always optimized"
+    },
+    {
+      "file": "src/sections/analysis/content.ts",
+      "text": "for current climate and stress levels."
+    },
+    {
+      "file": "src/sections/article/content.ts",
+      "text": "[Journal]"
+    },
+    {
+      "file": "src/sections/article/content.ts",
+      "text": "[Explore]"
+    },
+    {
+      "file": "src/sections/article/content.ts",
+      "text": "More Insights"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "[Awards]"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Industry notes"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Project highlights"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "A record of our research validation and system benchmarks within"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "the modern skincare ecosystem today."
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Beauty Tech Forum"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Innovation of the Year"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "June 2025"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Dermatology Review Board"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Best clinical integration for AI systems"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "March 2025"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "The Wellness Collective"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Most accurate skin mapping tool of the year"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "October 2024"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Vogue Beauty Tech Awards"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Next generation personalized skincare award"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "February 2024"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Interactive Science Forum"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "Excellence in human-centered data design"
+    },
+    {
+      "file": "src/sections/awards/content.ts",
+      "text": "August 2024"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Sensoria — Careers"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Explore open positions at Sensoria. We are looking for systems architects and data scientists to build the future of autonomous biometric analysis."
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "We are hiring"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Creative people"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "[Careers]"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Sensoria is a remote-first lab"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "building the first neural engine for autonomous skin health."
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Type"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Salary"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Location"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "About the role"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Apply Now"
+    },
+    {
+      "file": "src/sections/careers-list/content.ts",
+      "text": "Show details"
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "[Channels]"
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "Direct contact"
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "Reach out to our team for direct laboratory inquiries"
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "or visit our research facility for partnership discussions."
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "Email desk"
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "Available for global technical support and research inquiries."
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "contact@sensoria.com"
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "Physical lab"
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "Scientific visits and on-site meetings by appointment only."
+    },
+    {
+      "file": "src/sections/channels/content.ts",
+      "text": "82 Rothschild Blvd, Tel Aviv"
+    },
+    {
+      "file": "src/sections/concept/content.ts",
+      "text": "[Concept]"
+    },
+    {
+      "file": "src/sections/concept/content.ts",
+      "text": "Intelligent Beauty"
+    },
+    {
+      "file": "src/sections/concept/content.ts",
+      "text": "Get Started"
+    },
+    {
+      "file": "src/sections/concept/content.ts",
+      "text": "Woman with her hair up among soft pastel tulle."
+    },
+    {
+      "file": "src/sections/concept/content.ts",
+      "text": "Woman in yellow behind a blur of pink and golden light."
+    },
+    {
+      "file": "src/sections/concept/content.ts",
+      "text": "Close-up of a face lit by pink and teal neon light."
+    },
+    {
+      "file": "src/sections/concept/content.ts",
+      "text": "Woman with glossy lips captured in soft motion blur."
+    },
+    {
+      "file": "src/sections/concept/content.ts",
+      "text": "Young woman in a white dress against violet light."
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Sensoria — Contact"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Get in touch with our technical support team or reach out to our research laboratory for partnership discussions and scientific inquiries."
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Get support"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Contact our lab"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "[Get in touch]"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "hello@sensoria.com"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Message from the website"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Name *"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Alexandra Jensen"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Email *"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "alex@gmail.com"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Subject *"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Select a topic..."
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Technical support"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Partnership"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Media inquiry"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Message"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Describe your issue or question in detail..."
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Send message"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Thanks!"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Opened in your email app"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Try again"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "No spam. No data shared. →"
+    },
+    {
+      "file": "src/sections/contact/content.ts",
+      "text": "Privacy Policy"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "[FAQ]"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "Talk to us"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "Our team is here to help you personally with any questions."
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "Contact Us"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "How accurate is the neural scan?"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "It maps over 100,000 dermal points with 98% precision to ensure your ritual is perfectly synced with your current skin biology."
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "Can I use my current products?"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "Yes. Sensoria analyzes your existing routine and suggests how to optimize it with AI-driven timing and specific application methods."
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "Is it suitable for sensitive skin?"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "Absolutely. The system detects sensitivity markers and automatically prioritizes barrier repair and calming ingredients in your daily ritual."
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "How often should I scan my skin?"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "We recommend a deep scan once a week. This allows the AI to track subtle changes and adjust your formula based on stress and climate."
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "What if my local climate changes?"
+    },
+    {
+      "file": "src/sections/faq/content.ts",
+      "text": "The app automatically updates your routine in real-time based on local UV levels, humidity, and pollution markers in your area."
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Sensoria"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Sensoria combines advanced neural mapping with personalized science to create an intelligent daily ritual for your skin's health."
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Get in touch"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "hello@sensoria.com"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Sign in to newsletter and never miss any update."
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Enter your email..."
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "hello@sensoria.com"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Newsletter sign-up"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Subscribe"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Navigation"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Home"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "About"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Careers"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Journal"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Social"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Threads"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Instagram"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "LinkedIn"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "© 2026 Sensoria. All rights reserved."
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Created by"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Liana Tudakova"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Privacy Policy"
+    },
+    {
+      "file": "src/sections/footer/content.ts",
+      "text": "Terms of Service"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "SENSORIA"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "NEURAL MAPPING"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "INTELLIGENT BEAUTY"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "VITALITY INDEX"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "BIOMETRIC SYNC"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "7-DAY RESULTS"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "DERMAL ANALYSIS"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "CLIMATE ADAPTIVE"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Start scanning"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "your skin today"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Front-view beauty portrait of a woman with soft blonde hair and glowing skin."
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Share your current skincare routine with us, and"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "our AI-engine will send you a personalized optimization report"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "within 24 hours."
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "hello@sensoria.com"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "My skincare routine"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Name *"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Aria Belmont"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Email *"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "aria@gmail.com"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Your Routine"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "List the products you use daily..."
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Get feedback"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Thanks!"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Opened in your email app"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Try again"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "No spam. No data shared. →"
+    },
+    {
+      "file": "src/sections/get-started/content.ts",
+      "text": "Privacy Policy"
+    },
+    {
+      "file": "src/sections/hero/content.ts",
+      "text": "Portrait of a woman with glowing skin, surrounded by colourful diffused light."
+    },
+    {
+      "file": "src/sections/hero/content.ts",
+      "text": "No more skin guessing. No more random products. Just a smart AI tool that helps your natural beauty shine."
+    },
+    {
+      "file": "src/sections/hero/content.ts",
+      "text": "Intelligent neuro-beauty"
+    },
+    {
+      "file": "src/sections/hero/content.ts",
+      "text": "Sensoria"
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "[How it Works]"
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Simple Steps"
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Smart Results"
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Close-up of a woman applying a drop of golden serum with a pipette."
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Neural Scan"
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Our AI analyzes 100,000 dermal points to map your unique skin markers."
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Data Decode"
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "We process environmental factors like humidity, UV, and stress levels in real-time."
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Custom Ritual"
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Receive a tailored skincare routine designed specifically for your biology."
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Live Sync"
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "The system continuously monitors changes and updates your daily formula."
+    },
+    {
+      "file": "src/sections/how-it-works/content.ts",
+      "text": "Try Sensoria"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Job details:"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "[Join Us]"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Apply now"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "hello@sensoria.com"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Application:"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Full name *"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Alexandra Jensen"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Email address *"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "alex@gmail.com"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Resume link *"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "drive.google.com/file/..."
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Cover letter"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Briefly describe your experience with AI or health tech systems"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Submit application"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Thanks!"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Opened in your email app"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Try again"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "No spam. No data shared. →"
+    },
+    {
+      "file": "src/sections/job/content.ts",
+      "text": "Privacy Policy"
+    },
+    {
+      "file": "src/sections/journal-list/content.ts",
+      "text": "Sensoria — Research Journal"
+    },
+    {
+      "file": "src/sections/journal-list/content.ts",
+      "text": "Technical deep dives into neural accuracy benchmarks, climate-adaptive diagnostics, and the engineering of real-time dermal mapping systems."
+    },
+    {
+      "file": "src/sections/journal-list/content.ts",
+      "text": "Journal"
+    },
+    {
+      "file": "src/sections/journal-list/content.ts",
+      "text": "Research insights"
+    },
+    {
+      "file": "src/sections/journal-list/content.ts",
+      "text": "Load More"
+    },
+    {
+      "file": "src/sections/legal/content.ts",
+      "text": "Last updated:"
+    },
+    {
+      "file": "src/sections/legal/content.ts",
+      "text": "Review our commitment to biometric security. Information on decentralized processing, end-to-end encryption, and global data compliance."
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Sensoria"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Home"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "About"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Careers"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Journal"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Contact"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Get template"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Need Support?"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "hello@sensoria.com"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Privacy Policy"
+    },
+    {
+      "file": "src/sections/navigation/content.ts",
+      "text": "Terms of Service"
+    },
+    {
+      "file": "src/sections/not-found/content.ts",
+      "text": "[Not found]"
+    },
+    {
+      "file": "src/sections/not-found/content.ts",
+      "text": "The page you are looking for could not be found."
+    },
+    {
+      "file": "src/sections/not-found/content.ts",
+      "text": "Back to Home"
+    },
+    {
+      "file": "src/sections/preloader/content.ts",
+      "text": "Sensoria"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "[Pricing]"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Select Plan"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Scalable Beauty"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Monthly"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Yearly (20%)"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Personal"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Essential AI-driven insights for daily skin management, designed for those starting their neural skincare journey with precision."
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "1 Deep neural scan every month"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Real-time local climate synchronization"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Basic adaptive ritual guide for day & night"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Standard vitality tracking and history"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Essential community & email support"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Try Sensoria"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Professional"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Complete bio-marker synchronization for total skin mastery, featuring real-time AI adjustments and professional-level analysis."
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Unlimited high-fidelity neural scans"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Advanced bio-marker & stress sync"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Deep analysis & full skin history log"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Priority AI support and expert guidance"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Early access to all future beta features"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Try Sensoria"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Custom Scale"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Bigger vision?"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "We power it."
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "hello@sensoria.com"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Sensoria Team"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "We believe that advanced"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "skincare technology should be accessible to everyone. Sensoria was designed to bridge the gap between complex science and daily rituals."
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Alexandra Jensen"
+    },
+    {
+      "file": "src/sections/pricing/content.ts",
+      "text": "Founder & CEO"
+    },
+    {
+      "file": "src/sections/principles/content.ts",
+      "text": "[Essence]"
+    },
+    {
+      "file": "src/sections/principles/content.ts",
+      "text": "Principles"
+    },
+    {
+      "file": "src/sections/principles/content.ts",
+      "text": "Evidence"
+    },
+    {
+      "file": "src/sections/principles/content.ts",
+      "text": "We validate every neural algorithm through extensive and scientific research."
+    },
+    {
+      "file": "src/sections/principles/content.ts",
+      "text": "Velocity"
+    },
+    {
+      "file": "src/sections/principles/content.ts",
+      "text": "Our technical team ships weekly updates to maintain high diagnostic accuracy."
+    },
+    {
+      "file": "src/sections/principles/content.ts",
+      "text": "Honesty"
+    },
+    {
+      "file": "src/sections/principles/content.ts",
+      "text": "Clear data reports and honest product without any marketing bias."
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "[Results]"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "Visible"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "[in 7 days]"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "Visible Progress"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "“Thanks to the redesign, we've seen a steady 60% increase in leads.”"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "The Approach"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "Mira Rossi"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "Verified User"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "Just 7 days and my skin looks better than ever."
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "It's smooth, healthy, and has such a natural glow."
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "Vitality index:"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "Before: portrait of a model with short curly hair and smooth, even-toned skin."
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "After: close-up of a smiling model's clear, radiant skin."
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "Before"
+    },
+    {
+      "file": "src/sections/results/content.ts",
+      "text": "After"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "[Values]"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Standards"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Precision"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "We ensure high accuracy by testing every neural model against clinical data."
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Support"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Technical assistance is available to help you integrate our smart systems."
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Velocity"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Our infrastructure allows for rapid processing of dermal markers in seconds."
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Ethics"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Our infrastructure allows for rapid processing of complex dermal markers in seconds."
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Growth"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "The system constantly learns to improve individual routine results."
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Clarity"
+    },
+    {
+      "file": "src/sections/standards/content.ts",
+      "text": "Complex scientific reports are simplified into easy to understand visuals."
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "[Experts]"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Our team"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Sensoria"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Ready to grow together with us?"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Be part of the lab that’s changing how the world understands skin health."
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "View Careers"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Marcus Thorne"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Head of AI Engineering"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Marcus Thorne, Head of AI Engineering."
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Elena Vance"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Chief Dermatologist"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Elena Vance, Chief Dermatologist."
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Sienna Grey"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Product Strategist"
+    },
+    {
+      "file": "src/sections/team/content.ts",
+      "text": "Sienna Grey, Product Strategist."
+    },
+    {
+      "file": "src/sections/vision/content.ts",
+      "text": "Vision"
+    },
+    {
+      "file": "src/sections/vision/content.ts",
+      "text": "“Sensoria uses neural mapping to replace generic beauty trends with a clear, data-driven roadmap for your skin health every single day.”"
+    },
+    {
+      "file": "src/sections/vision/content.ts",
+      "text": "Alexandra Jensen"
+    },
+    {
+      "file": "src/sections/vision/content.ts",
+      "text": "Founder of Sensoria"
+    },
+    {
+      "file": "src/sections/vision/content.ts",
+      "text": "Woman among flowers in soft motion blur."
+    }
+  ],
+  "favicon": "a1e849cf8a6f97a8"
+}

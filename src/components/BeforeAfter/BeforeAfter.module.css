@@ -1,0 +1,55 @@
+/* The "after" photo shows only right of the divider. */
+.after {
+  clip-path: inset(0 0 0 var(--split));
+}
+/* Invisible slider over the whole photo: drag or click anywhere. */
+.range {
+  appearance: none;
+  opacity: 0;
+  margin: 0;
+}
+/* Divider line through the handle */
+.divider {
+  left: var(--split);
+  translate: -50% 0;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  left: 50%;
+  width: var(--spacing-hairline);
+  translate: -50% 0;
+  background-color: var(--color-glass);
+}
+/* Round glass handle with two arrow heads (‹ ›) */
+.handle {
+  background-color: var(--color-glass);
+  box-shadow: inset 0 0 0 var(--spacing-hairline) var(--color-glass-edge);
+}
+.handle::before,
+.handle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: var(--spacing-chevron);
+  height: var(--spacing-chevron);
+  border-left: var(--spacing-menu-line) solid;
+  border-top: var(--spacing-menu-line) solid;
+  transform-origin: 0 0;
+}
+.handle::before {
+  left: calc(var(--spacing-chevron) * 2.25);
+  rotate: -45deg;
+}
+.handle::after {
+  right: var(--spacing-chevron);
+  rotate: 135deg;
+}
+/* Clicking a label: the divider slides all the way. */
+.jumping .after {
+  transition: clip-path var(--motion-compare-jump);
+}
+.jumping .divider {
+  transition: left var(--motion-compare-jump);
+}

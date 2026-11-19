@@ -1,0 +1,7 @@
+/* The two photos fade in 0.1s and 0.2s after they come into view. */
+.first {
+  --reveal-delay: var(--motion-fade-delay-1);
+}
+.second {
+  --reveal-delay: var(--motion-fade-delay-2);
+}

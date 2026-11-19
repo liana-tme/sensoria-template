@@ -1,0 +1,9 @@
+/* Underlined contact link: text and line turn accent on hover (link style, 0.2s). */
+.link {
+  transition:
+    color var(--motion-link-fast) var(--ease-soft),
+    text-decoration-color var(--motion-link-fast) var(--ease-soft);
+}
+.link:hover {
+  color: var(--color-accent);
+}

@@ -1,0 +1,7 @@
+/* Fade-in delays (appear) */
+.first {
+  --reveal-delay: var(--motion-fade-delay-1);
+}
+.second {
+  --reveal-delay: var(--motion-fade-delay-2);
+}

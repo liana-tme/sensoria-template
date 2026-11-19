@@ -1,0 +1,10 @@
+/* Footer menu link: an accent underline grows under the label on hover (same as the menu). */
+.line {
+  width: 0;
+  transition: width var(--motion-link-line-duration) var(--ease-soft);
+}
+@media (hover: hover) {
+  .link:hover .line {
+    width: 100%;
+  }
+}

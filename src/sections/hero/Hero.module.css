@@ -1,0 +1,16 @@
+/* Appear delays, timed to start as the preloader leaves. */
+.image {
+  --reveal-delay: var(--motion-hero-image-delay);
+}
+.title {
+  --reveal-delay: var(--motion-hero-title-delay);
+}
+.lead {
+  --reveal-delay: var(--motion-hero-lead-delay);
+}
+.mark {
+  --reveal-delay: var(--motion-hero-mark-delay);
+}
+.leadText {
+  text-indent: var(--hero-lead-indent);
+}

@@ -1,0 +1,124 @@
+.bar {
+  z-index: var(--layer-nav);
+  transition:
+    translate var(--motion-nav-hide-duration) var(--ease-spring-hide),
+    opacity var(--motion-nav-hide-duration) var(--ease-spring-hide);
+}
+.hidden {
+  translate: 0 calc(var(--motion-nav-hide-distance) * -1);
+  opacity: 0;
+}
+
+/* Closed: transparent bar. Open: page-coloured panel with more room at the bottom and a thin
+   border line below it, so it doesn't merge with the page underneath. */
+.panel {
+  padding-bottom: var(--spacing-nav-y);
+  background-color: transparent;
+  box-shadow: inset 0 calc(var(--spacing-hairline) * -1) 0 transparent;
+  transition:
+    background-color var(--motion-nav-open-duration) var(--ease-curtain),
+    box-shadow var(--motion-nav-open-duration) var(--ease-curtain),
+    padding-bottom var(--motion-nav-open-duration) var(--ease-curtain);
+}
+.panel.open {
+  padding-bottom: var(--spacing-nav-bottom);
+  background-color: var(--color-page);
+  box-shadow: inset 0 calc(var(--spacing-hairline) * -1) 0 var(--color-border);
+}
+
+/* The menu grows from zero height to its full height. */
+.drawer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--motion-nav-open-duration) var(--ease-curtain);
+}
+.open .drawer {
+  grid-template-rows: 1fr;
+}
+
+/* Menu links drop in one after another each time the menu opens (appear, replay). */
+.item {
+  opacity: 0;
+  translate: 0 calc(var(--motion-menu-link-distance) * -1);
+}
+.open .item {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--motion-menu-link-duration) var(--ease-spring-menu),
+    translate var(--motion-menu-link-duration) var(--ease-spring-menu);
+}
+.open .item:nth-child(1) { transition-delay: var(--motion-menu-delay-1); }
+.open .item:nth-child(2) { transition-delay: var(--motion-menu-delay-2); }
+.open .item:nth-child(3) { transition-delay: var(--motion-menu-delay-3); }
+.open .item:nth-child(4) { transition-delay: var(--motion-menu-delay-4); }
+.open .item:nth-child(n + 5) { transition-delay: var(--motion-menu-delay-5); }
+@media (prefers-reduced-motion: reduce) {
+  .item {
+    opacity: 1;
+    translate: none;
+  }
+}
+
+/* Menu link: an accent underline grows under the label on hover. */
+.linkLine {
+  width: 0;
+  transition: width var(--motion-link-line-duration) var(--ease-soft);
+}
+@media (hover: hover) {
+  .link:hover .linkLine {
+    width: 100%;
+  }
+}
+
+/* Menu icon: short line top-left, long line middle, short line bottom-right. */
+.line {
+  position: absolute;
+  height: var(--spacing-menu-line);
+  background-color: currentColor;
+  transition:
+    transform var(--motion-menu-icon-duration) var(--ease-spring-bouncy),
+    width var(--motion-menu-icon-duration) var(--ease-spring-bouncy),
+    opacity var(--motion-menu-icon-duration) var(--ease-spring-bouncy);
+}
+.lineTop {
+  top: 0;
+  left: 0;
+  width: var(--spacing-menu-icon-short);
+}
+.lineMiddle {
+  top: calc((var(--spacing-menu-icon-h) - var(--spacing-menu-line)) / 2);
+  left: 0;
+  width: var(--spacing-menu-icon-w);
+}
+.lineBottom {
+  bottom: 0;
+  right: 0;
+  width: var(--spacing-menu-icon-short);
+}
+@media (hover: hover) {
+  .menuIcon:not(.menuIconOpen):hover .line {
+    width: var(--spacing-menu-icon-w);
+  }
+}
+
+/* Open: middle line disappears, the short lines meet in the centre as a cross. */
+.menuIconOpen {
+  --shift-x: calc((var(--spacing-menu-icon-w) - var(--spacing-menu-icon-short)) / 2);
+  --shift-y: calc((var(--spacing-menu-icon-h) - var(--spacing-menu-line)) / 2);
+  --cross: var(--motion-menu-icon-cross);
+}
+@media (hover: hover) {
+  .menuIconOpen:hover {
+    --cross: var(--motion-menu-icon-cross-hover);
+  }
+}
+.menuIconOpen .lineMiddle {
+  opacity: 0;
+}
+.menuIconOpen .lineTop {
+  transform: translate(var(--shift-x), var(--shift-y)) rotate(var(--cross));
+}
+.menuIconOpen .lineBottom {
+  transform: translate(calc(var(--shift-x) * -1), calc(var(--shift-y) * -1)) rotate(calc(var(--cross) * -1));
+}

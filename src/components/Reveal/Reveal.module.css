@@ -1,0 +1,107 @@
+.drop {
+  opacity: 0;
+  translate: 0 calc(var(--motion-drop-distance) * -1);
+}
+.drop.shown {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--motion-drop-duration) var(--ease-spring-drop),
+    translate var(--motion-drop-duration) var(--ease-spring-drop);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.rise {
+  opacity: 0;
+  translate: 0 var(--motion-rise-distance);
+}
+.rise.shown {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--motion-rise-duration) var(--ease-spring-firm),
+    translate var(--motion-rise-duration) var(--ease-spring-firm);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.fade {
+  opacity: 0;
+}
+.fade.shown {
+  opacity: 1;
+  transition: opacity var(--motion-fade-duration) var(--ease-spring);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.slide {
+  opacity: 0;
+  translate: calc(var(--motion-slide-distance) * -1) 0;
+}
+.slide.shown {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--motion-slide-duration) var(--ease-soft),
+    translate var(--motion-slide-duration) var(--ease-soft);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.float {
+  opacity: 0;
+  translate: 0 var(--motion-float-distance);
+}
+.float.shown {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--motion-float-duration) var(--ease-float),
+    translate var(--motion-float-duration) var(--ease-float);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.cards {
+  opacity: 0;
+  translate: 0 var(--motion-cards-distance);
+}
+.cards.shown {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--motion-cards-duration) var(--ease-cards),
+    translate var(--motion-cards-duration) var(--ease-cards);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.lift {
+  opacity: 0;
+  translate: 0 var(--motion-lift-distance);
+}
+.lift.shown {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--motion-lift-duration) var(--ease-soft),
+    translate var(--motion-lift-duration) var(--ease-soft);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.settle {
+  translate: 0 calc(var(--motion-hero-image-distance) * -1);
+  scale: var(--motion-hero-image-scale);
+}
+.settle.shown {
+  translate: 0 0;
+  scale: 1;
+  transition:
+    translate var(--motion-hero-image-duration) var(--ease-hero-image),
+    scale var(--motion-hero-image-duration) var(--ease-hero-image);
+  transition-delay: var(--reveal-delay, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .drop,
+  .rise,
+  .fade,
+  .slide,
+  .float,
+  .cards,
+  .lift,
+  .settle {
+    opacity: 1;
+    translate: none;
+    scale: none;
+    transition: none;
+  }
+}

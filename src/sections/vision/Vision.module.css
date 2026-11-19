@@ -1,0 +1,4 @@
+/* The quote floats in quickly: 0.3s instead of the plan cards' 1.6s. */
+.quote {
+  --motion-float-duration: var(--motion-quote-duration);
+}

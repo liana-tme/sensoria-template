@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "lenis/dist/lenis.css";
+
+@layer base {
+  /* Real buttons show the hand cursor (Tailwind 4 resets it to the arrow) */
+  button:not(:disabled),
+  [role="button"] {
+    cursor: pointer;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* No orphan words: headings and short lines wrap evenly, paragraphs avoid a lone last word. */
+  h1, h2, h3, h4, h5, h6, blockquote, figcaption {
+    text-wrap: balance;
+  }
+  p, li {
+    text-wrap: pretty;
+  }
+}
+
+/* Article text (journal): bullet / number in the list indent, accent bar left of a quote (rich text). */
+@layer components {
+  .article-list > li::before {
+    position: absolute;
+    left: 0;
+    content: "\2022";
+  }
+  ol.article-list > li::before {
+    content: counter(list-item) ".";
+  }
+  .article-quote::before {
+    position: absolute;
+    inset-block: 0;
+    left: 0;
+    width: var(--spacing-quote-bar);
+    border-radius: var(--radius-quote-bar);
+    background-color: var(--color-accent);
+    content: "";
+  }
+}
+
+/*
+ * Page change: the new page wipes in from the bottom with a soft edge (the original design's page
+ * effect). Uses the browser's view transitions: browsers without them just show the new page.
+ */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root) {
+  animation: none;
+}
+::view-transition-new(root) {
+  /* the mask is three screens tall: opaque at the bottom, a soft edge in the middle, clear on top */
+  mask-image: linear-gradient(to top, black 33.33%, transparent 66.67%);
+  mask-size: 100% 300%;
+  mask-repeat: no-repeat;
+  animation: page-wipe var(--motion-page-duration) var(--ease-page) both;
+}
+@keyframes page-wipe {
+  from {
+    mask-position: 0 0;
+  }
+  to {
+    mask-position: 0 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

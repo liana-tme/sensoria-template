@@ -1,0 +1,23 @@
+.track {
+  --ticker-gap: var(--spacing-xs);
+  gap: var(--ticker-gap);
+  animation: drift linear infinite;
+  animation-duration: 0s;
+}
+.strip {
+  --ticker-gap: var(--spacing-strip-gap);
+}
+.set {
+  gap: var(--ticker-gap);
+}
+@keyframes drift {
+  to {
+    /* one set + one gap = exactly half of the track */
+    transform: translateX(calc(-50% - var(--ticker-gap) / 2));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

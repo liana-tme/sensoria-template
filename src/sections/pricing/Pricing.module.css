@@ -1,0 +1,19 @@
+/* Switch and cards start a little after coming into view (appear delay 0.3s). */
+.later {
+  --reveal-delay: var(--motion-plans-delay);
+}
+/* The custom card floats a shorter way than the plans. */
+.near {
+  --motion-float-distance: var(--motion-rise-distance-sm);
+}
+/* Dashed line in a plan card: a 1px slice of a thicker dashed border (as in the original). */
+.dash {
+  position: relative;
+  overflow: hidden;
+}
+.dash::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  border-top: var(--spacing-dash) dashed var(--color-border);
+}

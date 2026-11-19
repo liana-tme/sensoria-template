@@ -1,0 +1,11 @@
+.label {
+  transition: translate var(--motion-button-duration) var(--ease-spring-button);
+}
+.copy {
+  top: var(--spacing-button-roll);
+}
+@media (hover: hover) {
+  .root:hover .label {
+    translate: 0 calc(var(--spacing-button-roll) * -1);
+  }
+}

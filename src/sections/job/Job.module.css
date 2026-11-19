@@ -1,0 +1,5 @@
+/* The apply form rises 20px in 0.4s. */
+.form {
+  --motion-lift-distance: var(--motion-rise-distance-sm);
+  --motion-lift-duration: var(--motion-link-duration);
+}
