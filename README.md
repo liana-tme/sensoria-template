@@ -20,7 +20,7 @@ A dark, editorial website for an AI beauty or skin-care product, in code: **Next
 The site is **already built**. You make it yours by talking to an AI assistant that works inside this folder. You don't need to know how to code.
 
 **1. Install two apps** (once):
-- **An AI app that can work with folders.** Either the [Claude desktop app](https://claude.ai/download) — open its **Code** tab (Claude Code needs a paid Claude plan) — or [Cursor](https://cursor.com) (check its current plans). In these apps the Sensoria instructions load by themselves.
+- **An AI app that can work with folders.** Either the [Claude desktop app](https://claude.ai/download) — open its **Code** tab (Claude Code needs a paid Claude plan) — [Cursor](https://cursor.com) (check its current plans), or [Codex](https://openai.com/codex) by OpenAI (comes with a ChatGPT plan). In these apps the Sensoria instructions load by themselves.
   This is a code project: open it in the **Code** tab — not in Claude Design, Cowork or Framer.
 - **Node.js** — the free engine that runs the site on your computer. Download the **LTS** version from [nodejs.org](https://nodejs.org) and click through the installer.
 
@@ -38,7 +38,7 @@ the link to open it.
 
 Then just say what you want in your own words — "change the title", "add my photos", "make an About page", "is my site ready to launch?". The assistant knows where everything lives, keeps the Sensoria look, proposes a plan before building anything new, and tells you what is still template content.
 
-> **Started in a chat?** Uploading the files to a chat works for questions, but you can't see your site there while you work. Move to the **Code** tab of the Claude app (or Cursor), open the unzipped folder and paste the message above — your site opens live and the assistant follows the template's instructions by itself.
+> **Started in a chat?** Uploading the files to a chat works for questions, but you can't see your site there while you work. Move to the **Code** tab of the Claude app (or Cursor, or Codex), open the unzipped folder and paste the message above — your site opens live and the assistant follows the template's instructions by itself.
 
 The site first shows grey **"Your photo"** blocks — that's where your photos go (the template ships without photos and videos; video blocks show a still picture until you add yours).
 
